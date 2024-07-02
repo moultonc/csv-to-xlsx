@@ -3,9 +3,6 @@ import pandas as pd
 import streamlit as st
 from io import BytesIO
 
-# Define default paths
-outputfile = 'user_list.xlsx'
-
 # Set up the Streamlit app
 st.title("CSV to XLSX Converter")
 
@@ -27,12 +24,12 @@ if uploaded_file is not None:
     with pd.ExcelWriter(excel_buffer, engine='openpyxl') as writer:
         read_file.to_excel(writer, index=False, header=True)
     excel_buffer.seek(0)
+    st.success("File is ready for download.")
 
     # Present download button
     st.download_button(
         label="Download Excel file",
         data=excel_buffer,
-        file_name=outputfile,
+        file_name='csv-to-xlsx.xlsx',
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     )
-    st.success("File is ready for download.")
