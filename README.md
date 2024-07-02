@@ -1,19 +1,3 @@
-# 🌀 Spiral template
+# csv to xlsx file converter
 
-A simple Streamlit app that draws a spiral. 
-
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://basic-template.streamlit.app/)
-
-### How to run it on your own machine
-
-1. Install the requirements
-
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+A simple, Streamlit app, developed for converting csv files to xlsx for a couple of use cases within the OSPAR  Commission Secretariat.
