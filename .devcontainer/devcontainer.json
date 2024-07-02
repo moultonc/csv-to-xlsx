@@ -1,6 +1,6 @@
 {
   "name": "CSV to XLSX Converter from dev container",
-  // "image": "ghcr.io/streamlit/basic-template:latest",
+  "image": "ghcr.io/streamlit/basic-template:latest",
   "customizations": {
     "codespaces": {
       "openFiles": [
